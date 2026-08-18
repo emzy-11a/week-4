@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#gridparent{
+    padding: 10px;
+    background-color: aquamarine;
+    display: grid;
+    /* grid-template-columns:repeat(3,1fr); */
+    gap: 25px;
+    grid-template-areas: 
+     "html"
+     "css"
+     "js"
+     "php"
+     "python";
+
+
+    @media(width >=640px){
+        grid-template-columns:repeat(2, 1fr); 
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+         "html   css"
+         "html   js"
+         "php    js"
+         "python python";
+    }
+     @media(width >=800px){
+        grid-template-columns:repeat(3, 1fr); 
+        /* grid-template-rows: repeat(4, 1fr); */
+        grid-template-areas:
+         "html   css     js"
+         "html   css     js"
+         "php  python      js"
+         "php  python   python";
+    }
+    
+    
+     @media(width >=950px){
+        grid-template-columns:repeat(4, 1fr); 
+        /* grid-template-rows: repeat(4, 1fr); */
+        grid-template-areas:
+         "html   css     css    css"
+         "html   php      php    js"
+         "html   php      php    js"
+         "python python  python  js ";
+    }
+
+
+
+}
+.block{
+    border: 5px solid blue;
+    padding: 10px;
+    border-radius: 15px; 
+}
+.block1{
+    grid-area: html;
+}
+.block2{
+    grid-area: css;
+}
+.block3{
+    grid-area: js;
+}
+.block4{
+    grid-area: php;
+}
+.block5{
+    grid-area: python;
+}

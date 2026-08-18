@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+    background-color: black;
+
+ }
+ nav{
+    background-color: rgb(38, 11, 120);
+    border-bottom: 3px solid white;
+    color: white;
+    display: flex;
+    padding: 10px;
+    justify-content:space-between;
+    align-content: center;
+ }
+ nav ul{
+    display: flex;
+
+    
+ }
+ nav ul li{
+    list-style-type:none;
+
+ }
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-right: 40px;
+ }
+  nav ul li ul {
+    display: none;
+    width: 200px;
+    height: auto;
+    background-color: blanchedalmond;
+    border-radius: 12px;
+    padding: 10px;
+    margin-left: -70px
+    
+ }
+ nav ul li ul li a {
+   color: rgb(33, 32, 32);
+   line-height: 1.5;
+ }
+  nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    
+ }
+ nav .logo-div{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+   
+ }
+ nav .logo-div img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+ }
+/* #flex_container{
+    width: 900px;
+    height: 700px;
+    background-color: rgb(168, 167, 165);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-grow: 100%;
+    
+}
+.my-item{
+    width: 200px;
+    height: 120px;
+    border: 2px solid white;
+    font-size: 24px;
+    color: white;
+    
+    
+
+}
+.my-item.my-item.one{
+    background-color: red;
+}
+.my-item.my-item.two{
+    background-color: blue;
+}
+.my-item.my-item.three{
+    background-color: green;
+}     */ 

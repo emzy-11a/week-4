@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c7c4c4;
+    overflow: auto;
+}
+#container{
+    background-color: #333;
+    width: 500px;
+    height: 2000px;
+    border: 2px solid yellow;
+    margin: 20px auto;
+    font-size: 40px;
+    position: relative;
+}
+.box1{
+    width:100px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+}
+.box2{
+    width:150px;
+    height: 150px;
+    background-color: #fff;
+    color: black;
+    font-size: 24px;
+    position: sticky;
+    bottom:0px;
+    right: 0px;
+   /* top: 40px;*/
+
+}
+.box3{
+    width:200px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+}

@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #111;
+}
+h1 { margin: 0 0 8px; }
+p { margin: 0 0 20px; }
+#parent-div {
+  position: static;
+  background-color: black;
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  overflow: visible;
+}
+#parent-div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+.boxa { width: 70px; height: 70px; background: crimson; }
+.boxb { width: 100px; height: 100px; background: royalblue; }
+.boxc { width: 150px; height: 150px; background: seagreen; position: static; }
+.boxd { width: 200px; height: 200px; background: darkorange; }
+.boxe { width: 250px; height: 250px; background: purple; }
+/* Position demos: use one rule at a time */

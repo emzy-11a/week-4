@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#gridparent{
+    padding: 10px;
+    background-color: aquamarine;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 25px;
+    grid-template-areas: 
+    "html"
+    "css"
+    "js"
+    "php"
+    "python"
+    "c-plus"
+    "c";
+
+    @media(width >=640px){
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(4, 1fr);
+       grid-template-areas: 
+       "html css"
+       "c-plus js"
+       "php c"
+       "python python"; 
+    }
+
+
+    @media(width >=800px){
+       grid-template-columns: repeat(3, 1fr);
+       /* grid-template-rows: repeat(4, 1fr); */
+       grid-template-areas: 
+       "c    php    c-plus"
+       "html    php     js"
+       "html     css    js"
+       "python  python python"; 
+    }
+    @media(width >=950px){
+       grid-template-columns: repeat(4, 1fr);
+       /* grid-template-rows: repeat(4, 1fr); */
+       grid-template-areas: 
+       "c    c    css css"
+       "html    php     php  js"
+       "html     c-plus    c-plus  js"
+       "python  python python python"; 
+    }
+}
+
+.block{
+    border: 5px solid blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.block1{
+    grid-area: html;
+    background-color:blanchedalmond;
+}
+.block2{
+    grid-area: css;
+    background-color:brown;
+}
+.block3{
+    grid-area: js;
+    background-color:blueviolet;
+}
+.block4{
+    grid-area: php;
+    background-color:chartreuse;
+}
+.block5{
+    grid-area: python;
+    background-color:cadetblue;
+}
+.block6{
+    grid-area: c-plus;
+    background-color:rgb(201, 210, 30)
+}
+.block7{
+    grid-area: c;
+    background-color:rgb(210, 105, 30)
+}
